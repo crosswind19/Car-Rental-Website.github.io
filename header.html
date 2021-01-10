@@ -14,11 +14,13 @@ body {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
+  background-image: url(img/header_index.png);
 }
 
 .header a {
   float: left;
   color: black;
+  font-weight: bold;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -30,10 +32,12 @@ body {
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  font-family:"Lucida Console", "Courier New", monospace;
 }
 
 .header a:hover {
-  color: blue;
+  color: orange;
+  font-weight: bold;
 }
 
 .header a.active {
@@ -57,14 +61,15 @@ body {
   }
 }
 </style>
+  <div >
 </head>
 <body>
 
 <nav class="header">
-  <a href="index.html" class="logo">Unknown Page Web Programming Assignment 1</a>
+  <a href="index.html" class="logo" style="transition-duration: 10.6s">Unknown Page Web Programming Assignment 1</a>
   <div class="header-right">
-    <a href="index.html" style="transition-duration: 1.0s">Home</a>
-    <a href="member.html" style="transition-duration: 0.3s">Members</a>
+    <a href="index.html" style="transition-duration: 0.6s">Home</a>
+    <a href="member.html" style="transition-duration: 0.6s">Members</a>
     <!-- <a href="#about">About</a>  -->
   </div>
 </nav>

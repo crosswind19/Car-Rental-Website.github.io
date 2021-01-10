@@ -6,44 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Unknown|Member</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="css/style.css" rel="stylesheet">
-  <style>
-  /* Style the tab */
-  body{
-    background-image: url("img/unkmbr_back.jpg");
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #cee9e3;
-  opacity: 0.5;
-}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: 1px;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: white ;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-</style>
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script>
   $(function(){
@@ -51,9 +15,10 @@
     $("#footer").load("footer.html");
   });
   </script>
+  <link href="css/membercss.css" rel="stylesheet" />
 </head>
-<body>
-  <script>
+<body style="background-image: url(img/wallpaper1.jpg)">
+  <!-- <script>
   function disMem(members) {
   // Declare all variables
   var i, tablinks;
@@ -67,18 +32,10 @@
   document.getElementById(members).style.display = "block";
   evt.currentTarget.className += " active";
 }
-</script>
+</script> -->
   <div id="header"></div>
 
-<!--  This is a member page <br>-->
- <!--<a href="member1.html">Member 1</a> <br>
- <a href="member2.html">Member 2</a> <br>
- <a href="member3.html">Member 3</a> <br>
- <a href="member4.html">Member 4</a> <br>
--->
-<!--tablinks-->
-
- <div class="tab">
+ <!-- <div class="tab">
    <a href="member1.html">
    <button class="tablinks" onclick="disMem(member1)"><b><i>Member 1</b></i></button>
    <a href="member2.html">
@@ -91,8 +48,56 @@
    <button class="tablinks" onclick="disMem(member5)"><b><i>Member 5</b></i></button>
    <a href="index.html">
    <button class="tablinks" onclick="disMem(member5)"><b><i>Return</b></i></button>
- </div>
+ </div> -->
+<br>
 
+<br>
+ <div class="container">
+   <h1 class="heading"><span>meet</span>Our Team</h1>
+
+   <div class="profiles">
+     <div class="profile">
+       <img src="img/zy.png" class="profile-img">
+
+       <h3 class="user-name">Lai Zhi Yuan</h3>
+       <h5>ASSIST. LEADER</h5>
+       <a href="member4.html" class="w3-button w3-block w3-teal">View Profile</a>
+     </div>
+     <div class="profile">
+       <img src="img/kx.png" href="member1.html" class="profile-img">
+
+       <h3 class="user-name">Cheah Kah Xuan</h3>
+       <h5>LEADER</h5>
+       <a href="member1.html" class="w3-button w3-block w3-teal">View Profile</a>
+     </div>
+     <div class="profile">
+       <img src="img/ch.jpg" class="profile-img">
+
+       <h3 class="user-name">Chong Hong Loke</h3>
+       <h5>PROGRAMMER</h5>
+       <a href="member2.html" class="w3-button w3-block w3-teal">View Profile</a>
+     </div>
+
+   </div>
+
+   <div class="profiles">
+     <div class="profile">
+       <img src="img/ed.jpg" class="profile-img">
+
+       <h3 class="user-name">Edison Tea</h3>
+       <h5>Type Writter</h5>
+       <a href="member3.html" class="w3-button w3-block w3-teal">View Profile</a>
+     </div>
+     <div class="profile">
+       <img src="img/foong.jpeg" class="profile-img">
+
+       <h3 class="user-name">Foong Zhuang Hoong</h3>
+       <h5>Researcher</h5>
+       <a href="member5.html" class="w3-button w3-block w3-teal">View Profile</a>
+     </div>
+
+   </div>
+ </div>
 
 
 </div>
