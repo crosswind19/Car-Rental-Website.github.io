@@ -31,12 +31,12 @@ body {
 }
 
 .profile {
-  flex-basis: 500px;
+  flex-basis: 300px;
 }
 
 .profile .profile-img {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   cursor: pointer;
 }

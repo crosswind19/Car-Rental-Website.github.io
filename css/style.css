@@ -25,6 +25,12 @@ body {
   line-height: 70%;
 }
 
+h4 {
+  font-size: 21px;
+  font-family: 'Bungee', cursive;
+  text-align: center;
+}
+
 
 .container,
 .container-fluid,
