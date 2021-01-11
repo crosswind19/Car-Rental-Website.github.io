@@ -6,12 +6,11 @@
 }
 
 body {
-  background-color: #12172b;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
-  margin: 20px 40px;
+  margin-top: 20px;
   color: white;
 }
 
@@ -27,39 +26,49 @@ body {
 
 .profiles {
   display: flex;
-  justify-content: space-around;
-  margin: 20px 80px;
+  /* justify-content: space-around; */
+  margin: 20px 5px;
 }
 
 .profile {
-  flex-basis: 260px;
+  flex-basis: 500px;
 }
 
 .profile .profile-img {
-  height: 260px;
-  width: 260px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   cursor: pointer;
-  transition: 400ms;
 }
 
 
 .user-name {
   margin-top: 30px;
-  font-size: 35px;
+  font-size: 20px;
+}
+
+.profile h3 {
+  font-size: 20px;
+  font-weight: 150;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ccc;
+  text-shadow: 2px 2px black;
 }
 
 .profile h5 {
   font-size: 18px;
   font-weight: 100;
-  letter-spacing: 3px;
+  text-align: center;
+  letter-spacing: 1px;
   color: #ccc;
+  text-shadow: 1px 1px black;
 }
 
 .profile p {
   font-size: 16px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1150px) {
