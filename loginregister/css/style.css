@@ -19,6 +19,7 @@ body {
 }
 
 .box input[type="text"],
+.box input[type="radio"],
 .box input[type="password"] {
     border: 0;
     background: none;
@@ -41,6 +42,7 @@ body {
 }
 
 .box input[type="text"]:focus,
+.box input[type="radio"]:focus,
 .box input[type="password"]:focus {
     width: 300px;
     border-color: #2ecc71

@@ -1,31 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177875132-1"></script>
 <script>
-$(function(){
-  $('#header').load('header.html');
-  $("#footer").load("footer.html");
-});
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177875132-1');
 </script>
-  <link href="css/style.css" rel="stylesheet" />
-</head>
 
-<body style="background-image: url(img/wallpaper2.jpg);height:100%;width:100%">
-  <div>
-    <div id="header"></div>
 
-    <div class="welcome">
-    <h1>WELCOME</h1>
-    <h6><b><i>To Our Page</i></b></h6>
+    <script data-ad-client="ca-pub-2432708023082860" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta charset="utf-8">
+    <title>WP - Project | Welcome </title>
+    <link rel="icon" href="../assets/img/2020.png">
+    <link rel="stylesheet" href="hello.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="stage">
+        <div class="wrapper">
+            <div class="slash"></div>
+            <div class="sides">
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+            </div>
+            <div class="text">
+                <div class="text--backing">WP_Project</div>
+                <div class="text--left">
+                    <div class="inner">WP_Project</div>
+                </div>
+                <div class="text--right">
+                    <div class="inner">WP_Project</div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div id="footer"></div>
-  </div>
-</body>
+    <script src="hello.js"></script>
+    <!-- <script> window.location.href='home.php'; </script> -->
+  </body>
 </html>

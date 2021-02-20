@@ -3,7 +3,7 @@
 $server = 'localhost';
 $username = 'root';
 $password = '';
-$dbname = 'jotajotipenang';
+$dbname = 'webp';
 
 $conn = mysqli_connect($server,$username,$password,$dbname);
 
