@@ -52,23 +52,23 @@ function validateName($name){
 
 
 //create function to check student id
-function validateStaffID($id){
-    if($id == null)
-    {
-        return "Please enter your <b>Staff ID</b>!";
-    }
-    else if(!preg_match('/^[A-Z]{2}[0-9]{4}$/',$id))
-    {
-        return "Invalid <b>Staff ID</b>!";
-    }
-    else if(checkStaffIDExistence($id))
-    {
-        //existence check - check duplicated primary key
-        //dont allow same primary key into the system
-        return "<b>Staff ID</b> given already exist!";
-    }
-
-}
+// function validateStaffID($id){
+//     if($id == null)
+//     {
+//         return "Please enter your <b>Staff ID</b>!";
+//     }
+//     else if(!preg_match('/^[A-Z]{2}[0-9]{4}$/',$id))
+//     {
+//         return "Invalid <b>Staff ID</b>!";
+//     }
+//     else if(checkStaffIDExistence($id))
+//     {
+//         //existence check - check duplicated primary key
+//         //dont allow same primary key into the system
+//         return "<b>Staff ID</b> given already exist!";
+//     }
+//
+// }
 
 function validatePhone($phone)
 {
@@ -110,7 +110,7 @@ function checkStaffIDExistence($id){
     //clear all unknown character and convert it to normal html tag
     //NOTEL SELECT * FROM student WHERE StudentID = 19PMD12345
     $id = $con->real_escape_string($id);
-    $sql = "SELECT * FROM staff WHERE staff_ID = '$id'";
+    $sql = "SELECT * FROM user WHERE Name = '$name'";
 
     //DB Step 3:
     //NOTE: SELECT function $con->$query()
@@ -139,7 +139,7 @@ function checkStaffUserExistence($username){
     //clear all unknown character and convert it to normal html tag
     //NOTEL SELECT * FROM student WHERE StudentID = 19PMD12345
     $username = $con->real_escape_string($username);
-    $sql = "SELECT * FROM staff WHERE Username = '$username'";
+    $sql = "SELECT * FROM user WHERE Username = '$username'";
 
     //DB Step 3:
     //NOTE: SELECT function $con->$query()

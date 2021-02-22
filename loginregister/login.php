@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT staff_id, name,password,phone_no,username,gender FROM staff WHERE username = ?";
+        $sql = "SELECT  name,password,phone_no,username,gender FROM staff WHERE username = ?";
 
             $con = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
            $stmt = $con->prepare($sql);
@@ -54,7 +54,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $staff, $name,$hashed_password, $phone, $username, $gender );
+                    mysqli_stmt_bind_result($stmt,$name,$hashed_password, $phone, $username, $gender );
                     if(mysqli_stmt_fetch($stmt)){
                         if($password == $hashed_password){
                             // Password is correct, so start a new session
@@ -62,7 +62,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                             // Store data in session variables
                             $_SESSION["loggedin"] = true;
-                            $_SESSION["staffid"] = $staff;
+                            // $_SESSION["staffid"] = $staff;
                             $_SESSION["name"] = $name;
                             $_SESSION["gender"] = $gender;
                             $_SESSION["phone"] = $phone;

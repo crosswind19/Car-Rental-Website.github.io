@@ -11,7 +11,7 @@
       <div class="col-md-6">
           <div class="card">
               <h1>Hello</h1>
-
+              <h2>This is a logged in Page.</h2>
               <a href="logout.php" >Logout</a>
           </div>
       </div>

@@ -66,12 +66,12 @@ body {
 <body>
 
 <nav class="header">
-  <a href="index.php" class="logo" style="transition-duration: 10.6s">Unknown Page Web Programming Assignment 1</a>
+  <a href="index.php" class="logo" style="transition-duration: 10.6s">Web Programming Project</a>
   <div class="header-right">
     <a href="home.php" style="transition-duration: 0.6s">Home</a>
-    <a href="member.html" style="transition-duration: 0.6s">Members</a>
-    <a href="clock.html" style="transition-duration: 0.6s">Clock</a>
-    <a href="calculator.html" style="transition-duration: 0.6s">Calculator</a>
+    <a href="member.php" style="transition-duration: 0.6s">Members</a>
+    <a href="clock.php" style="transition-duration: 0.6s">Clock</a>
+    <a href="calculator.php" style="transition-duration: 0.6s">Calculator</a>
     <a href="loginregister/login.php" style="transition-duration: 0.6s">Login/Register</a>
     <!-- <a href="#about">About</a>  -->
   </div>

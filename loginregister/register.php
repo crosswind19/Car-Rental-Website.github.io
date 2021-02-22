@@ -1,6 +1,6 @@
 <?php
 
-        //include helper.php
+
         require_once 'Validation.php';
         ?>
 
@@ -10,7 +10,7 @@
         {
             //retrieve user input, store into a variable
             //trim means a method to remove whitespace in the value
-            $id = strtoupper(trim($_POST['id']));
+            // $id = strtoupper(trim($_POST['id']));
             $name = trim($_POST['name']);
 
             isset($_POST['gender'])?
@@ -28,7 +28,7 @@
             //Validation
             //DB Step 1: Validation
 
-            $error['id'] = validateStaffID($id);
+            // $error['id'] = validateStaffID($id);
             $error['name'] = validateName($name);
             $error['gender'] = validateGender($gender);
 
@@ -46,14 +46,14 @@
                 $con = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
 
                 //DB Step 3: SQL Command
-                $sql ="INSERT INTO staff (Staff_ID, Name, Gender, Phone_No,Username,Password) VALUES (?, ?, ?,?,?,?)";
+                $sql ="INSERT INTO user ( Name, Gender, Phone_No,Username,Password) VALUES (?, ?, ?,?,?)";
 
                 //DB Step 4: Get the connection object to perform the SQL command
                 $stmt = $con->prepare($sql);
 
                 //DB Step 4.1: Pass in the parameter to ?,?,?,?
                 //                 VVVV 4 strings
-                $stmt->bind_param('ssssss', $id, $name, $gender, $phone,$username,$password);
+                $stmt->bind_param('sssss', $name, $gender, $phone,$username,$password);
 
                 //DB Step 4.2: Run and execute statement
                  $stmt->execute();
@@ -62,7 +62,7 @@
                 {
                     echo '<script>alert("Sucessfully Inserted")</script>';
                     //reset fields
-                    $id=$name=$gender=$phone=$username=$password= null;
+                    $name=$gender=$phone=$username=$password= null;
                 }
                 else
                 {
@@ -102,9 +102,6 @@
                 <form class="box" action="" method="post">
                   <h1>Register</h1>
 
-                          <td>Staff ID:</td>
-                          <td><input type="text" style="color: whitesmoke" name="id" placeholder="staff ID" value="<?php echo isset($id)?$id:"" ?>" size="10" /></td>
-
                           <td><input type="text" style="color: whitesmoke" name="name" placeholder="Name" value="<?php echo isset($name)?$name:"" ?>" size="30" /></td>
 
                           <td><input type="text" style="color: whitesmoke" name="gender" placeholder="Gender (M for Male/F for Female)" value="<?php echo isset($gender)?$gender:"" ?>" size="30" /></td>
@@ -119,7 +116,8 @@
 
                           <td><input type="password" style="color: whitesmoke" name="password" placeholder="password" value="<?php echo isset($password)?$password:"" ?>" size="10" /></td>
 
-                          <input type="submit" value="Register" name="insert" onclick="lcoation='test.php'"/>
+                          <a class="forgot text-muted" href="login.php">Already have an account? Sign in now!</a>
+                          <input type="submit" value="Register" name="insert" onclick="lcoation='login.php'"/>
                           <input type="reset" value="Reset" name="reset" />
                           <input type="button" value="Back" name="cancel" onclick="location='../index.php'"/>
                 </form>
