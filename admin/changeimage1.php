@@ -3,7 +3,7 @@ session_start();
 error_reporting(0);
 include('includes/config.php');
 if(strlen($_SESSION['alogin'])==0)
-	{	
+	{
 header('location:index.php');
 }
 else{
@@ -36,7 +36,7 @@ $msg="Image updated successfully";
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
-	
+
 	<title>Car Rental Portal | Admin Update Image 1</title>
 
 	<!-- Font awesome -->
@@ -86,7 +86,7 @@ $msg="Image updated successfully";
 
 				<div class="row">
 					<div class="col-md-12">
-					
+
 						<h2 class="page-title">Vehicle Image 1 </h2>
 
 						<div class="row">
@@ -95,16 +95,16 @@ $msg="Image updated successfully";
 									<div class="panel-heading">Vehicle Image 1 Details</div>
 									<div class="panel-body">
 										<form method="post" class="form-horizontal" enctype="multipart/form-data">
-										
-											
-  	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+
+
+  	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php }
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 
 
 
 <div class="form-group">
 												<label class="col-sm-4 control-label">Current Image1</label>
-<?php 
+<?php
 $id=intval($_GET['imgid']);
 $sql ="SELECT Vimage1 from tblvehicles where tblvehicles.id=:id";
 $query = $dbh -> prepare($sql);
@@ -130,14 +130,15 @@ foreach($results as $result)
 												</div>
 											</div>
 											<div class="hr-dashed"></div>
-											
-										
-								
-											
+
+
+
+
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-4">
-								
+
 													<button class="btn btn-primary" name="update" type="submit">Update</button>
+													<a href="edit-vehicle.php">back</a>
 												</div>
 											</div>
 
@@ -146,15 +147,15 @@ foreach($results as $result)
 									</div>
 								</div>
 							</div>
-							
+
 						</div>
-						
-					
+
+
 
 					</div>
 				</div>
-				
-			
+
+
 			</div>
 		</div>
 	</div>
