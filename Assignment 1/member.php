@@ -52,38 +52,51 @@
 <br>
 
 <br>
-<div class="team-boxed">
-    <div class="container">
-        <div class="intro">
-            <h1 class="text-center">Meet our team</h1>
-        </div>
-        <div class="row people">
-            <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" data-bs-hover-animate="pulse" src="https://i.imgur.com/nAcoHRf.jpg">
-                    <h3 class="name">Boris Simga</h3>
-                    <p class="title">Designer</p>
-                    <p class="description"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br><br></p>
-                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" data-bs-hover-animate="pulse" src="https://i.imgur.com/xELPaag.jpg">
-                    <h3 class="name">Andy row</h3>
-                    <p class="title">Graphics designer</p>
-                    <p class="description"><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat ismal<br><br></p>
-                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" data-bs-hover-animate="pulse" src="https://i.imgur.com/HjKTNkG.jpg">
-                    <h3 class="name">Charles m.</h3>
-                    <p class="title">Developer</p>
-                    <p class="description"><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id<br><br></p>
-                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-                </div>
-            </div>
-        </div>
+<div class="container">
+  <h1 class="heading"><span>meet</span>Our Team</h1>
+
+  <div class="profiles">
+    <div class="profile">
+      <img src="img/zy.png" class="profile-img">
+
+      <h3>LAI ZHI YUAN</h3>
+      <h5>ASSIST. LEADER</h5>
+      <a href="member4.html" class="w3-button w3-block w3-teal">View Profile</a>
     </div>
+    <div class="profile">
+      <img src="img/kx.png" href="member1.html" class="profile-img">
+
+      <h3>CHEAH KAH XUAN</h3>
+      <h5>LEADER</h5>
+      <a href="member1.html" class="w3-button w3-block w3-teal">View Profile</a>
+    </div>
+    <div class="profile">
+      <img src="img/ch.jpg" class="profile-img">
+
+      <h3>CHONG HONG LOKE</h3>
+      <h5>PROGRAMMER</h5>
+      <a href="member2.html" class="w3-button w3-block w3-teal">View Profile</a>
+    </div>
+
+  </div>
+
+  <div class="profiles">
+    <div class="profile">
+      <img src="img/ed.jpg" class="profile-img">
+
+      <h3>EDISON TEA</h3>
+      <h5>Type Writter</h5>
+      <a href="member3.html" class="w3-button w3-block w3-teal">View Profile</a>
+    </div>
+    <div class="profile">
+      <img src="img/foong.jpeg" class="profile-img">
+
+      <h3>FOONG ZHUANG HOONG</h3>
+      <h5>Researcher</h5>
+      <a href="member5.html" class="w3-button w3-block w3-teal">View Profile</a>
+    </div>
+
+  </div>
 </div>
 
 

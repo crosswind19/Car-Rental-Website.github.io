@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include('includes/config.php');
 error_reporting(0);
@@ -27,15 +27,6 @@ error_reporting(0);
 <!--FontAwesome Font Style -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-<!-- SWITCHER -->
-		<link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/red.css" title="red" media="all" data-default-color="true" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/orange.css" title="orange" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/blue.css" title="blue" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/pink.css" title="pink" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/green.css" title="green" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/purple.css" title="purple" media="all" />
-        
 <!-- Fav and touch icons -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon-icon/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon-icon/apple-touch-icon-114-precomposed.html">
@@ -46,13 +37,9 @@ error_reporting(0);
 </head>
 <body>
 
-<!-- Start Switcher -->
-<?php include('includes/colorswitcher.php');?>
-<!-- /Switcher -->  
-
-<!--Header--> 
+<!--Header-->
 <?php include('includes/header.php');?>
-<!-- /Header --> 
+<!-- /Header -->
 
 <!--Page Header-->
 <section class="page-header listing_page">
@@ -70,7 +57,7 @@ error_reporting(0);
   <!-- Dark Overlay-->
   <div class="dark-overlay"></div>
 </section>
-<!-- /Page Header--> 
+<!-- /Page Header-->
 
 <!--Listing-->
 <section class="listing-page">
@@ -79,7 +66,7 @@ error_reporting(0);
       <div class="col-md-9 col-md-push-3">
         <div class="result-sorting-wrapper">
           <div class="sorting-count">
-<?php 
+<?php
 //Query for Listing count
 $sql = "SELECT id from tblvehicles";
 $query = $dbh -> prepare($sql);
@@ -102,7 +89,7 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 {  ?>
         <div class="product-listing-m gray-bg">
-          <div class="product-listing-img"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" class="img-responsive" alt="Image" /> </a> 
+          <div class="product-listing-img"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" class="img-responsive" alt="Image" /> </a>
           </div>
           <div class="product-listing-content">
             <h5><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h5>
@@ -117,7 +104,7 @@ foreach($results as $result)
         </div>
       <?php }} ?>
          </div>
-      
+
       <!--Side-Bar-->
       <aside class="col-md-3 col-md-pull-9">
         <div class="sidebar_widget">
@@ -138,10 +125,10 @@ $cnt=1;
 if($query->rowCount() > 0)
 {
 foreach($results as $result)
-{       ?>  
+{       ?>
 <option value="<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?></option>
 <?php }} ?>
-                 
+
                 </select>
               </div>
               <div class="form-group select">
@@ -152,7 +139,7 @@ foreach($results as $result)
 <option value="CNG">CNG</option>
                 </select>
               </div>
-             
+
               <div class="form-group">
                 <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Search Car</button>
               </div>
@@ -183,47 +170,47 @@ foreach($results as $result)
                 </div>
               </li>
               <?php }} ?>
-              
+
             </ul>
           </div>
         </div>
       </aside>
-      <!--/Side-Bar--> 
+      <!--/Side-Bar-->
     </div>
   </div>
 </section>
-<!-- /Listing--> 
+<!-- /Listing-->
 
 <!--Footer -->
 <?php include('includes/footer.php');?>
-<!-- /Footer--> 
+<!-- /Footer-->
 
 <!--Back to top-->
 <div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>
-<!--/Back to top--> 
+<!--/Back to top-->
 
 <!--Login-Form -->
 <?php include('includes/login.php');?>
-<!--/Login-Form --> 
+<!--/Login-Form -->
 
 <!--Register-Form -->
 <?php include('includes/registration.php');?>
 
-<!--/Register-Form --> 
+<!--/Register-Form -->
 
 <!--Forgot-password-Form -->
 <?php include('includes/forgotpassword.php');?>
 
-<!-- Scripts --> 
+<!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script> 
-<script src="assets/js/interface.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/interface.js"></script>
 <!--Switcher-->
 <script src="assets/switcher/js/switcher.js"></script>
-<!--bootstrap-slider-JS--> 
-<script src="assets/js/bootstrap-slider.min.js"></script> 
-<!--Slider-JS--> 
-<script src="assets/js/slick.min.js"></script> 
+<!--bootstrap-slider-JS-->
+<script src="assets/js/bootstrap-slider.min.js"></script>
+<!--Slider-JS-->
+<script src="assets/js/slick.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 
 </body>

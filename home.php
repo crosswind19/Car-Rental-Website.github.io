@@ -13,7 +13,7 @@ error_reporting(0);
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>Car Rental Portal</title>
+<title>Car Rental | WP Project</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -22,13 +22,7 @@ error_reporting(0);
 <link href="assets/css/slick.css" rel="stylesheet">
 <link href="assets/css/bootstrap-slider.min.css" rel="stylesheet">
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/red.css" title="red" media="all" data-default-color="true" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/orange.css" title="orange" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/blue.css" title="blue" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/pink.css" title="pink" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/green.css" title="green" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/purple.css" title="purple" media="all" />
+
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon-icon/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon-icon/apple-touch-icon-114-precomposed.html">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicon-icon/apple-touch-icon-72-precomposed.png">
@@ -65,15 +59,15 @@ error_reporting(0);
 <section class="section-padding gray-bg">
   <div class="container">
     <div class="section-header text-center">
-      <h2>Find the Best <span>Car For You</span></h2>
-      <p>It is above all the uncompromising, performance-oriented aesthetic that unmistakeably reveals its ambitions. Not elegant but extravagant. Not conventional but individual.</p>
+      <h2>Find Great Deals <span>for Car Rental in Malaysia</span></h2>
+      <p>We have great offers for daily, weekly and long term rentals in Malaysia. Book now at the lowest possible rates only with a small down payment and pay the rest when you pick up the car.</p>
     </div>
     <div class="row">
 
       <!-- Nav tabs -->
       <div class="recent-tab">
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab">New Car</a></li>
+          <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab">Available Car</a></li>
         </ul>
       </div>
       <!-- Recently Listed New Cars -->

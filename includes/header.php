@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-2">
-          <div class="logo"> <a href="index.php"><img src="assets/images/logg.png" alt="image"/></a> </div>
+          <div class="logo"> <a href="home.php"><img src="assets/images/logg.png" alt="image"/></a> </div>
         </div>
         <div class="col-sm-9 col-md-10">
           <div class="header_info">
@@ -67,17 +67,11 @@ foreach($results as $result)
             </li>
           </ul>
         </div>
-        <div class="header_search">
-          <div id="search_toggle"><i class="fa fa-search" aria-hidden="true"></i></div>
-          <form action="#" method="get" id="header-search-form">
-            <input type="text" placeholder="Search..." class="form-control">
-            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </form>
-        </div>
+        
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
-          <li><a href="index.php">Home</a>    </li>
+          <li><a href="home.php">Home</a>    </li>
           <li><a href="car-listing.php">Car Listing</a>
           <li><a href="page.php?type=aboutus">About Us</a></li>
 
